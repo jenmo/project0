@@ -2,38 +2,65 @@
 <html>
     <head>
         <title>Chinese Food in Allston</title>
-        <link rel="stylesheet" href="inheritance.css">
+         <link rel="stylesheet" href="korean.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @media (min-width: 750px)
+            {
+                h1::before
+                {
+                    content: "FoodSelect: Chinese Food near Allston";
+                }
+            }
+            @media (max-width: 749px)
+            {
+                h1::before
+                {
+                    content: "Chinese Food";
+                }
+            }
+            #Specialty{
+                color: red;
+                font-weight: bold;
+            }
+        </style>
     </head>
     <body>
-        <h1> FoodSelect:Chinese Food near Allston </h1>
-        <h3> Jen's Favorite Chinese Food in Allston: Jen's Picks</h3>
+        <div class="container">
+        <h1> </h1>
+        <h3> Jen's Picks</h3>
         <ol start = 1>
             <li> Shanghai Gate </li>
                 <ul>
-                    <li> Braised Pork Chop </li>
-                    <img src="Braised Pork Chop.jpg" width="6%" />
+                    <li id = "Specialty"> Braised Pork Chop </li>
+                    <img src="BraisedPorkChop.jpg" width="6%" />
                     <li> Eggplant</li>
                     <li> Rice Cake with preserved veggies and pork</li>
                 </ul>
             <li> Mala Resturant </li>
                 <ul>
-                    <li> Dan dan Noodles </li>
+                    <li id = "Specialty"> Dan dan Noodles </li>
                     <li> Dried Hotpot </li>
                     <li> Jin Sha Crab</li>
                 </ul>
             <li> Dophin Bay (Taiwanese) </li>
                 <ul>
                     <li> Beef Noodle Soup </li>
-                    <li> Fried Pork Chop with Rice </li>
+                    <li id = "Specialty"> Fried Pork Chop with Rice </li>
                      <img src="FriedPorkRice.jpg" width="6%" />
                     <li> Spicy Wonton Soup </li>
                 </ul>
         </ol>
+        </div>
+
+  <div class="container">
 
          <ul>
+            <h3> Additional Links </h3>
             <li> <a href="https://www.yelp.com/search?find_desc=Chinesefood&find_loc=Allston,MA">Click here for more Chinese restaurants!</a></li>
             <li> <a href="japanese.html">Click here for Japanese Food!</a></li>
              <li><a href="korean.html">Click here for Korean Food!</a></li>
              <li> <a href="index.html">Main Page</a></li>
-        </ul>
-
+         </ul>
+    </div>
